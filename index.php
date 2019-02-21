@@ -42,5 +42,10 @@ if($rs->execute()){
     }
 }
 ?>
+    <form action="inserir.php">
+    <input type="text" name="nome">
+    <input type="number" name="ano_lancamento" >
+    <input type="submit">
+    </form>
     </body>
 </html>
