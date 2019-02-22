@@ -9,8 +9,8 @@ if(isset($_POST['nome']) && isset($_POST['ano_lancamento'])){
     $con = Conexao::getInstancia();
 
     $stmt = $con->prepare("INSERT INTO jogo(nome, ano_lancamento, id_console, id_midia) VALUES(:nome, :ano, 1, 1)");
-    $stmt->bindParam(":nome",$nome);
-    $stmt->bindParam(":ano",$ano);
+    $stmt->bindParam(":nome",$nome,PDO::PARAM_STR);
+    $stmt->bindParam(":ano",$ano,PDO::PARAM_INT);
     $stmt->execute();
     if($stmt->rowCount() == 1){
         $id = $con->lastInsertId();

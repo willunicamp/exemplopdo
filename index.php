@@ -7,9 +7,9 @@
             <div class="form-group">
             <form action="inserir.php" method="post">
             <label>Nome do jogo</label>
-            <input type="text" name="nome" class="form-control">
+            <input type="text" name="nome" class="form-control"><br>
             <label>Ano de lançamento</label>
-            <input type="number" name="ano_lancamento" class="form-control">
+            <input type="number" name="ano_lancamento" class="form-control"><br>
             <input type="submit" value="Inserir" class="btn btn-primary">
             </form>
             </div>
